@@ -10,7 +10,7 @@ import { Trip } from '../../shared/models/trip';
 })
 export class ViewComponent implements OnInit {
 
-  private trip: Trip;
+  trip: Trip;
 
   constructor(private tripService: TripsService) { }
 
