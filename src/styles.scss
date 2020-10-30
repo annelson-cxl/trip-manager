@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@import 'sass/colors';
+@import 'sass/overrides';
+
+html { background-color: $background-color; }
+body { overflow-y: scroll; padding-bottom: 30px; width: 100%; overflow-x: hidden; background-color: $background-color; color: $font-color; }
+.hide { display: none; }
+code { display: block; }
+.nopad { padding: 0; }
+.err-text { color: $error-color; font-weight: bold; }
+.text-center { text-align: center; }
+
+.form-control {
+	background-color: $input-color;
+  border-color: rgba(255,255,255,.2);
+  color: $font-color;
+  &[disabled] {
+	  background-color: $input-disabled;
+  }
+  &:focus {
+    background-color: $input-focus;
+    color: $font-color;
+    box-shadow: 0 0 0 0.1rem rgba(0,123,255,.15);
+  }
+}

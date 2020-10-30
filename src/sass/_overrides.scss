@@ -1,0 +1,22 @@
+/* bootstrap overrides */
+.btn-primary { background-color: $primary-color; background-image: none; }
+.btn-primary:hover { background-color: $primary-color-darken; }
+.btn-primary:focus, .btn-primary.focus { color: $font-color; background-color: $primary-color-darken; }
+.btn-primary:active, .btn-primary:hover:active { color: $font-color; background-color: $primary-color-darken; }
+
+.btn-secondary { background-color: $secondary-color; background-image: none; }
+.btn-secondary:hover { background-color: $secondary-color-darken; }
+.btn-secondary:focus, .btn-secondary.focus { color: $font-color; background-color: $secondary-color-darken; }
+.btn-secondary:active, .btn-secondary:hover:active { color: $font-color; background-color: $secondary-color-darken; }
+
+.btn-info { background-color: $tertiary-color-darken; background-image: none; }
+.btn-info:hover { background-color: $tertiary-color; }
+.btn-info:focus, .btn-info.focus { color: $font-color; background-color: $tertiary-color; }
+.btn-info:active, .btn-info:hover:active { color: $font-color; background-color: $tertiary-color; }
+
+.btn-default { background-color: #ddd; background-image: none; }
+.btn-default:hover { background-color: #ccc; }
+
+.btn { border-width: 0; }
+
+.table-hover { cursor: pointer; }

@@ -1,0 +1,12 @@
+<table class="table table-dark table-striped table-bordered table-hover">
+  <thead>
+      <tr>
+          <th scope="col" *ngFor="let h of headers">{{h}}</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let record of TableData" (click)="rowClick(record)">
+          <td *ngFor="let h of headers">{{record[h]}}</td>
+      </tr>
+  </tbody>
+</table>
