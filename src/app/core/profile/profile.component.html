@@ -1,0 +1,25 @@
+<form>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="userEmail">Email</label>
+        <input type="text" class="form-control" id="userEmail" name="userEmail" [ngModel]="user.email" disabled>
+      </div>
+      <div class="form-group">
+        <label for="userName">Name</label>
+        <input type="text" class="form-control" id="userName" name="userName" [ngModel]="user.name" disabled>
+      </div>
+      <div class="form-group">
+        <label for="userNickName">Nickname</label>
+        <input type="text" class="form-control" id="userNickName" name="userNickName" [ngModel]="user.nickName" disabled>
+      </div>
+      <div class="form-group">
+        <label for="userLastUpdated">Last Updated</label>
+        <input type="text" class="form-control" id="userLastUpdated" name="userLastUpdated" [ngModel]="user.lastUpdated" disabled>
+      </div>
+    </div>
+    <div class="col">
+      <img src="{{user.picture}}" width="100%" height="100%" />
+    </div>
+  </div>
+</form>

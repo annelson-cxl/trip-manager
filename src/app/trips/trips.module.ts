@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 import { TripsRoutingModule } from './trips-routing.module';
@@ -15,7 +16,8 @@ import { TripsService } from './trips.service';
   ],
   imports: [
     CommonModule,
-    TripsRoutingModule
+    TripsRoutingModule,
+    FormsModule
   ],
   providers: [
     TripsService

@@ -2,11 +2,11 @@
 export class User {
 
   constructor(
-    public userId?: string,
-    public firstName?: string,
-    public lastName?: string,
-    public email?: string
+    public email?: string,
+    public name?: string,
+    public nickName?: string,
+    public picture?: string,
+    public lastUpdated?: string
+
   ){}
-
-
 }

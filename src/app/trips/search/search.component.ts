@@ -19,6 +19,7 @@ export class SearchComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log('i shit meself');
     this.trips.push({'bookingDate': 1604018402, 'confirmationNumber': 52933, 'recordLocator': 'OINSOE', 'startDate': 1610671202, 'endDate': 1611103202, 'status': 'good'});
     this.trips.push({'bookingDate': 1604018402, 'confirmationNumber': 98972, 'recordLocator': 'YZZDMF', 'startDate': 1610671202, 'endDate': 1611103202, 'status': 'good'});
     this.trips.push({'bookingDate': 1604018402, 'confirmationNumber': 92721, 'recordLocator': 'ALOGPS', 'startDate': 1610671202, 'endDate': 1611103202, 'status': 'good'});

@@ -1,0 +1,8 @@
+<div class="jumbotron" *ngIf="!loggedIn">
+  <div class="text-center">
+      <h1 class="display-3">Welcome to Trip Manager</h1>
+      <p class="lead">This application will allow you to view and make updates to trips booked through Orxe.</p>
+  </div>
+  <hr class="my-4">
+  <p class="float-right">Please <button class="btn btn-link" (click)="auth.loginWithRedirect()">log in</button> to get started.</p>
+</div>

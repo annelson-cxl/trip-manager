@@ -16,6 +16,7 @@ export class ViewComponent implements OnInit {
 
   ngOnInit() {
     this.trip = this.tripService.trip;
+    console.log("selected trip: ", this.trip);
   }
 
 }

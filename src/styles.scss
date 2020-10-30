@@ -15,8 +15,13 @@ code { display: block; }
 	background-color: $input-color;
   border-color: rgba(255,255,255,.2);
   color: $font-color;
-  &[disabled] {
-	  background-color: $input-disabled;
+  &:disabled {
+    background-color: $input-disabled;
+    color: $font-color-black;
+  }
+  &:read-only {
+    background-color: $input-disabled;
+    color: $font-color-black;
   }
   &:focus {
     background-color: $input-focus;

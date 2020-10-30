@@ -4,18 +4,26 @@ import { FormsModule } from '@angular/forms';
 
 import { CoreRoutingModule } from './core-routing.module';
 
-import { LoginComponent } from './login/login.component';
 import { UnauthorizedComponent } from './errors/unauthorized/unauthorized.component';
+import { NavComponent } from './nav/nav.component';
+import { LandingComponent } from './landing/landing.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
-    LoginComponent,
-    UnauthorizedComponent
+    UnauthorizedComponent,
+    NavComponent,
+    LandingComponent,
+    NavComponent,
+    ProfileComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     CoreRoutingModule
+  ],
+  exports: [
+    NavComponent
   ]
 })
 export class CoreModule { }

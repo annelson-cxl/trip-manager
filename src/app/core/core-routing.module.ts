@@ -1,18 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { LoginComponent } from './login/login.component';
+import { AuthGuard } from '@auth0/auth0-angular';
+
+import { LandingComponent } from './landing/landing.component';
 import { UnauthorizedComponent } from './errors/unauthorized/unauthorized.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    component: LoginComponent
+    component: LandingComponent
   },
   {
-    path: 'login',
-    component: LoginComponent
+    path: 'profile',
+    component: ProfileComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'errors/unauthorized',

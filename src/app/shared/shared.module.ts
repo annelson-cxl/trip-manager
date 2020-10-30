@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 
 
 @NgModule({
@@ -12,4 +12,9 @@ import { NgModule } from '@angular/core';
 })
 export class SharedModule {
 
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: SharedModule
+    };
+  }
 }
